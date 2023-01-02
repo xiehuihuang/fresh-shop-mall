@@ -1,0 +1,168 @@
+{
+    "name" : "牧耘郎",
+    "package" : "com.dfk.muyunlang",
+    "appid" : "__UNI__BC5FC0B",
+    "description" : "",
+    "versionName" : "1.0.7",
+    "versionCode" : 107,
+    "transformPx" : false,
+    "app-plus" : {
+        /* 5+App特有相关 */
+        "usingComponents" : true,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "compilerVersion" : 3,
+        "modules" : {
+            "OAuth" : {},
+            "Maps" : {},
+            "Share" : {},
+            "Payment" : {},
+            "Webview-x5" : {}
+        },
+        /* 模块配置 */
+        "distribute" : {
+            /* 应用发布信息 */
+            "android" : {
+                /* android打包配置 */
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ADD_VOICEMAIL\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ]
+            },
+            "ios" : {
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "修改个人信息，用户更改头像需要读取相册图片",
+                    "NSCameraUsageDescription" : "用户可修改个人信息，拍照头像上传",
+                    "NSPhotoLibraryAddUsageDescription" : "修改个人信息，将用户拍照的相片保存进相册",
+                    "NSLocationAlwaysAndWhenInUseUsageDescription" : "用户购买商品时，填写物流地址，获取用户的位置"
+                }
+            },
+            /* ios打包配置 */
+            "sdkConfigs" : {
+                "ad" : {},
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wx7dde86ad94f2fa51",
+                        "appsecret" : "d98456fa2f99ea29999924d86db0c8f5",
+                        "UniversalLinks" : "https://b.dfkjt.com/app/"
+                    }
+                },
+                "payment" : {
+                    "weixin" : {
+                        "appid" : "wx7dde86ad94f2fa51",
+                        "UniversalLinks" : "https://b.dfkjt.com/app/"
+                    },
+                    "appleiap" : {},
+                    "alipay" : {}
+                },
+                "share" : {
+                    "weixin" : {
+                        "appid" : "wx7dde86ad94f2fa51",
+                        "UniversalLinks" : "https://b.dfkjt.com/app/"
+                    }
+                }
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "android" : {
+                    "hdpi" : "static/1080.9.png",
+                    "xhdpi" : "static/1080.9.png",
+                    "xxhdpi" : "static/1080.9.png"
+                },
+                "ios" : {
+                    "iphone" : {
+                        "portrait-896h@3x" : "static/startImg/ios/1242x2688.png",
+                        "portrait-896h@2x" : "static/startImg/ios/828x1792.png",
+                        "iphonex" : "static/startImg/ios/1125x2436.png",
+                        "retina55" : "static/startImg/ios/1242x2208.png",
+                        "retina47" : "static/startImg/ios/750x1334.png",
+                        "retina40" : "static/startImg/ios/640x1136.png",
+                        "retina35" : "static/startImg/ios/640x960.png"
+                    }
+                }
+            }
+        }
+    },
+    /* SDK配置 */
+    "quickapp" : {},
+    /* 快应用特有相关 */
+    "mp-weixin" : {
+        /* 小程序特有相关 */
+        "usingComponents" : true,
+        "appid" : "wx1089bf8162b25764",
+        "setting" : {
+            "urlCheck" : false,
+            "es6" : true,
+            "minified" : true
+        },
+        "optimization" : {
+            "subPackages" : true
+        },
+        "permission" : {}
+    },
+    "h5" : {
+        "title" : "牧耘郎",
+        "domain" : "http://h5.dfkjt.com/"
+    }
+}
+/* 5+App特有相关 */
+
